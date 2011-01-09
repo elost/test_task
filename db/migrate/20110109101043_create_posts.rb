@@ -1,7 +1,7 @@
 class CreatePosts < ActiveRecord::Migration
   def self.up
     create_table :posts do |t|
-      t.referense :category
+      t.references :category
       t.string :title
       t.text :text
       t.string :source
