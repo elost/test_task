@@ -4,17 +4,17 @@
 
 <div class="posts">
 <% @posts.each do |post| %>
-  <div class="post_item">
-    <div class="post_title">
+  <div class="post-item">
+    <div class="post-title">
       <%= link_to post.title, post %>
     </div>
-    <div class="post_text">
+    <div class="post-text">
       <p><%= post.text %></p>
     </div>
-    <div class="post_source">
+    <div class="post-source">
       Source: <%= post.source %>
     </div>
-    <div class="post_tags">
+    <div class="post-tags">
       Tags: <%= post.tags %>
     </div>
   </div>

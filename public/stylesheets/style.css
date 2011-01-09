@@ -1,0 +1,30 @@
+.posts, .post {
+  width: 60%;
+}
+
+.post-item, .post {
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #949DAD;
+}
+
+.post-item-gutter {
+  margin: 0px;
+}
+
+.post-title {
+
+}
+
+.post-text {
+
+}
+
+.post-source {
+
+}
+
+.post-tags {
+
+}
