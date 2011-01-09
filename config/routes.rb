@@ -1,5 +1,6 @@
 TestTask::Application.routes.draw do
-  root :to => 'posts#index'
+
+  root :to => 'home#index'
   resources :posts, :only => [:new, :create, :show, :index]
 
   # The priority is based upon order of creation:

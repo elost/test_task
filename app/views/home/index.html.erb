@@ -1,0 +1,22 @@
+<h1>Posts</h1>
+
+<% @posts = Post.all %>
+
+<div class="posts">
+<% @posts.each do |post| %>
+  <div class="post_item">
+    <div class="post_title">
+      <%= link_to post.title, post %>
+    </div>
+    <div class="post_text">
+      <p><%= post.text %></p>
+    </div>
+    <div class="post_source">
+      Source: <%= post.source %>
+    </div>
+    <div class="post_tags">
+      Tags: <%= post.tags %>
+    </div>
+  </div>
+<% end %>
+</div>
