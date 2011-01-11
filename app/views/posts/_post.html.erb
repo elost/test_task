@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="post-item">
+  <div class="post-title">
+    <%= link_to post.title, post %>
+  </div>
+  <div class="post-text">
+    <p><%= post.text %></p>
+  </div>
+  <div class="post-source">
+    Source: <%= post.source %>
+  </div>
+  <div class="post-tags">
+    Tags: <%= post.tags %>
+  </div>
+</div>
