@@ -9,7 +9,8 @@ Category.delete_all
       :title => "title #{rand(50)}",
       :text => "Post #{post_index} in the #{category.name}" * 9,
       :source => "source of post #{post_index}",
-      :tags => "tag #{rand(10)}, tag #{rand(10)}, tag #{rand(10)}"
+      :tags => "tag #{rand(10)}, tag #{rand(10)}, tag #{rand(10)}",
+      :rate => rand(10)
     )
   end
 end

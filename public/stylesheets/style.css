@@ -3,14 +3,25 @@
 }
 
 .post-item, .post {
+  float: left;
   display: block;
-  padding-bottom: 10px;
+  padding: 0 0 10px 60px;
   margin-bottom: 10px;
   border-bottom: 1px solid #949DAD;
 }
 
-.post-item-gutter {
-  margin: 0px;
+.post-rating {
+  float: left;
+  width: 50px;
+  margin-left: -60px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-content {
+  display: block;
+  float: left;
 }
 
 .post-title {

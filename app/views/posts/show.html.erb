@@ -1,18 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <div class="post">
-  <div class="post-title">
-    <%= link_to @post.title, @post %>
+  <div class="post-rating">
+    <%= @post.rate %>
   </div>
-  <div class="post-text">
-    <p><%= @post.text %></p>
-  </div>
-  <div class="post-source">
-    Source: <%= @post.source %>
-  </div>
-  <div class="post-tags">
-    Tags: <%= @post.tags %>
+  <div class="post-content">
+    <div class="post-title">
+      <%= @post.title %>
+    </div>
+    <div class="post-text">
+      <p><%= @post.text %></p>
+    </div>
+    <div class="post-source">
+      Source: <%= @post.source %>
+    </div>
+    <div class="post-tags">
+      Tags: <%= @post.tags %>
+    </div>
   </div>
 </div>
 
-<%= link_to 'Back', {:controller => 'home',:action =>'index'} %>
+<%= link_to 'Back', home_path %>
