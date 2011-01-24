@@ -15,6 +15,8 @@ class VotesController < ApplicationController
         post.rate_by(vote_down_rate)
       end
     end
+    @post = Post.find(params[:post_id])
+  
   end
 
 end

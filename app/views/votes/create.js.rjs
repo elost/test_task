@@ -1,0 +1,1 @@
+page.replace_html("rate_#{@post.id}", render(:partial => 'posts/rate', :locals => {:post => @post}))
