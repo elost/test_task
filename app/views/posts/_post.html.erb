@@ -1,8 +1,8 @@
-<p id="notice"><%= notice %></p>
-
 <div class="post-item">
   <div class="post-rating">
+    <%= link_to_unless post.voted_from_ip?(request.remote_ip), '+', post_votes_path(post.id, :vote_up => true), :method => :post, :remote => true %>
     <%= post.rate %>
+    <%= link_to_unless post.voted_from_ip?(request.remote_ip), '-', post_votes_path(post.id, :vote_down => true), :method => :post, :remote => true %>
   </div>
   <div class="post-content">
     <div class="post-title">

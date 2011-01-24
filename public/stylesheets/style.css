@@ -5,15 +5,15 @@
 .post-item, .post {
   float: left;
   display: block;
-  padding: 0 0 10px 60px;
+  padding: 0 0 10px 80px;
   margin-bottom: 10px;
   border-bottom: 1px solid #949DAD;
 }
 
 .post-rating {
   float: left;
-  width: 50px;
-  margin-left: -60px;
+  width: 70px;
+  margin-left: -80px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;

@@ -1,7 +1,11 @@
 TestTask::Application.routes.draw do
 
+  get "votes/create"
+
   root :to => 'home#index', :as => 'home'
-  resources :posts, :only => [:new, :create, :show, :index]
+  resources :posts, :only => [:new, :create, :show, :index] do
+    resources :votes, :only => :create
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
