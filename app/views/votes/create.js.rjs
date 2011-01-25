@@ -1,1 +1,5 @@
-page.replace_html("rate_#{@post.id}", render(:partial => 'posts/rate', :locals => {:post => @post}))
+if @voted 
+  page.replace_html("rate-#{@post.id}", "+ #{@post.rate} -")
+else
+  page.replace_html("vote-notice-#{@post.id}", "An error occurred, please try again later.")
+end

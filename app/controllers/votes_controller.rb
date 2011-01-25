@@ -8,12 +8,14 @@ class VotesController < ApplicationController
     
     unless post.voted_from_ip?(ip)
       vote = post.votes.build(:user_ip => ip)
-      vote.save
+      @voted = vote.save
       if params[:vote_up]
         post.rate_by(vote_up_rate)
       elsif params[:vote_down]
         post.rate_by(vote_down_rate)
       end
+    else
+      @voted = true
     end
     @post = Post.find(params[:post_id])
   
