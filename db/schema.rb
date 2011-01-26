@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111171236) do
+ActiveRecord::Schema.define(:version => 20110126062140) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -27,6 +27,17 @@ ActiveRecord::Schema.define(:version => 20110111171236) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "rate",        :default => 0
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name",                      :limit => 100, :default => ""
+    t.string   "email",                     :limit => 100
+    t.string   "crypted_password",          :limit => 40
+    t.string   "salt",                      :limit => 40
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "remember_token",            :limit => 40
+    t.datetime "remember_token_expires_at"
   end
 
   create_table "votes", :force => true do |t|
